@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+<label>SEM1: </label>
+<input type="value" id="v1"><br>
+<label>SEM1: </label>
+<input type="value" id="v2"><br>
+<label>SEM1: </label>
+<input type="value" id="v3"><br>
+<label>SEM1: </label>
+<input type="value" id="v4"><br>
+<button onclick="calc()">calculate</button>
+</div>
+<script>
+    function calc(){
+    var myval1=document.getElementById('v1').value;
+    var myval2=document.getElementById('v2').value;
+    var myval3=document.getElementById('v3').value;
+    var myval4=document.getElementById('v4').value;
+    var res=[],temp=0,ans;
+    res.push(myval1);
+    res.push(myval2);
+    res.push(myval3);
+    res.push(myval4);
+    for(i=0;i<res.length;i++){
+        temp=temp+res[i];
+    }
+    console.log(res)
+    console.log(temp)
+    ans=temp/4;
+    alert("the cgpa is : "+ans);
+}
+</script>
+</body>
+</html>
